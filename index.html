@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
+    <link><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rosario" />
+  </head>
+  <!-- 
+  _________ __         .__                ___________                      .___       __  .__                      
+ /   _____//  |________|__|_____   ____   \_   _____/___  __ __  ____    __| _/____ _/  |_|__| ____   ____   ______
+ \_____  \\   __\_  __ \  \____ \_/ __ \   |    __)/  _ \|  |  \/    \  / __ |\__  \\   __\  |/  _ \ /    \ /  ___/
+ /        \|  |  |  | \/  |  |_> >  ___/   |     \(  <_> )  |  /   |  \/ /_/ | / __ \|  | |  (  <_> )   |  \\___ \ 
+/_______  /|__|  |__|  |__|   __/ \___  >  \___  / \____/|____/|___|  /\____ |(____  /__| |__|\____/|___|  /____  >
+        \/                |__|        \/       \/                   \/      \/     \/                    \/     \/ 
+-->
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <a class="navbar-brand" href="http://www.fourhundredfifteen.com/home.html">Four Hundred Fifteen</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <!-- /Navigation -->
+
+    <!-- Carousel -->
+    <div id="carousel-wrapper" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Item -->
+        <div class="carousel-item active">
+          <img
+            src="https://c7.staticflickr.com/8/7792/17183566950_8269edc397_z.jpg"
+            alt=" Carousel Wrapper Image"
+          />
+        </div>
+        <!-- /Item -->
+
+        <!-- Item -->
+        <div class="carousel-item">
+          <img
+            src="http://nebula.wsimg.com/075fbf42b2df4feef1e140a1480d2ba7?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+            alt=" Carousel Wrapper Image"
+          />
+        </div>
+        <!-- /Item -->
+
+        <!-- Item -->
+        <div class="carousel-item">
+          <img
+            src="http://nebula.wsimg.com/1f29d255698683e3a1f5c088dad5edb7?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+            alt=" Carousel Wrapper Image"
+          />
+        </div>
+        <!-- /Item -->
+
+        <!-- Item -->
+        <div class="carousel-item">
+          <img
+            src="http://nebula.wsimg.com/a19a33d95f9643393564866c653bb76e?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+            alt=" Carousel Wrapper Image"
+          />
+        </div>
+        <!-- /Item -->
+      </div>
+    </div>
+    <!-- /Carousel -->
+
+    <!-- Products -->
+    <div class="card-deck m-4">
+      <!-- Card -->
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="http://nebula.wsimg.com/2d757014da03c136ffbaab6baa4ffa9a?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+            class="card-img-top"
+            alt="Mezone"
+          />
+          <h5 class="card-title">
+            Illumination 
+          </h5>
+          <p class="card-text">
+            Choose the style of frame and mat to personalize for your home
+            Available Size: 8x10, 11x16, 16x20
+          </p>
+        </div>
+        <div class="card-footer">
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            onclick="openProductModal(event)"
+          >
+            Purchase Image
+          </button>
+        </div>
+      </div>
+      <!-- /Card -->
+      <!-- Card -->
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="http://nebula.wsimg.com/12671b4d558f086ace7608003b300f75?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+            class="card-img-top"
+            alt="..."
+          />
+          <h5 class="card-title">
+            A Pour View
+          </h5>
+          <p class="card-text">
+            Choose the style of frame and mat to personalize for your home
+            Available Size: 8x10, 11x16, 16x20
+          </p>
+        </div>
+        <div class="card-footer">
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            onclick="openProductModal(event)"
+          >
+            Purchase Image
+          </button>
+        </div>
+      </div>
+      <!-- /Card -->
+      <!-- Card -->
+      <div class="card" id="strapped">
+        <div class="card-body text-center">
+          <img
+            src="http://nebula.wsimg.com/075fbf42b2df4feef1e140a1480d2ba7?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+            class="card-img-top"
+            alt="..."
+          />
+          <h5 class="card-title">
+            Strapped
+          </h5>
+          <p class="card-text">
+            Choose the style of frame and mat to personalize for your home
+            Available Size: 8x10, 11x16, 16x20
+          </p>
+        </div>
+        <div class="card-footer">
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            onclick="openProductModal(event)"
+          >
+            Purchase Image
+          </button>
+        </div>
+      </div>
+      <!-- /Card -->
+    </div>
+    <div class="card-deck m-4">
+      <!-- Card -->
+      <div class="card" id="details">
+        <div class="card-body text-center">
+          <img
+            src="http://nebula.wsimg.com/ec72d1e9b84e25a9767bef22f7e665e8?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+            class="card-img-top"
+            alt="..."
+          />
+          <h5 class="card-title">
+            Details of Spring
+          </h5>
+          <p class="card-text">
+            Choose the style of frame and mat to personalize for your home
+            Available Size: 8x10, 11x16, 16x20
+          </p>
+        </div>
+        <div class="card-footer">
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            onclick="openProductModal(event)"
+          >
+            Purchase Image
+          </button>
+        </div>
+      </div>
+      <!-- /Card -->
+      <!-- Card -->
+      <div class="card" id="raindrops">
+        <div class="card-body text-center">
+          <img
+            src="http://nebula.wsimg.com/8f84d1fd41f4cfa3d360f750658d8c15?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+            class="card-img-top"
+            alt="..."
+          />
+          <h5 class="card-title">
+            Spring Raindrop
+          </h5>
+          <p class="card-text">
+            Choose the style of frame and mat to personalize for your home
+            Available Size: 8x10, 11x16, 16x20
+          </p>
+        </div>
+        <div class="card-footer">
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            onclick="openProductModal(event)"
+          >
+            Purchase Image
+          </button>
+        </div>
+      </div>
+      <!-- /Card -->
+      <!-- Card -->
+      <div class="card" id="contrast">
+        <div class="card-body text-center">
+          <img
+            src="http://nebula.wsimg.com/575a03734d5320684f0c79b00a9294b1?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+            class="card-img-top"
+            alt="..."
+          />
+          <h5 class="card-title">
+            Contrasting Colors
+          </h5>
+          <p class="card-text">
+            Choose the style of frame and mat to personalize for your home
+            Available Size: 8x10, 11x16, 16x20
+          </p>
+        </div>
+        <div class="card-footer">
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            onclick="openProductModal(event)"
+          >
+            Purchase Image
+          </button>
+        </div>
+      </div>
+      <!-- /Card -->
+    </div>
+  </div>
+  <div class="card-deck m-4">
+    <!-- Card -->
+    <div class="card" id="markers">
+      <div class="card-body text-center">
+        <img
+          src="http://nebula.wsimg.com/37ab77536af6d1aa27885ba9097dd0ed?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+          class="card-img-top"
+          alt="..."
+        />
+        <h5 class="card-title">
+          Natural Trail Markers
+        </h5>
+        <p class="card-text">
+          Choose the style of frame and mat to personalize for your home
+          Available Size: 8x10, 11x16, 16x20
+        </p>
+      </div>
+      <div class="card-footer">
+        <button
+          type="button"
+          class="btn btn-primary btn-block"
+          onclick="openProductModal(event)"
+        >
+          Purchase Image
+        </button>
+      </div>
+    </div>
+    <!-- /Card -->
+    <!-- Card -->
+    <div class="card" id="scouting">
+      <div class="card-body text-center">
+        <img
+          src="http://nebula.wsimg.com/28c22180223685c771876a2a4f235362?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+          class="card-img-top"
+          alt="..."
+        />
+        <h5 class="card-title">
+          Scouting
+        </h5>
+        <p class="card-text">
+          Choose the style of frame and mat to personalize for your home
+          Available Size: 8x10, 11x16, 16x20
+        </p>
+      </div>
+      <div class="card-footer">
+        <button
+          type="button"
+          class="btn btn-primary btn-block"
+          onclick="openProductModal(event)"
+        >
+          Purchase Image
+        </button>
+      </div>
+    </div>
+    <!-- /Card -->
+    <!-- Card -->
+    <div class="card" id="camplife">
+      <div class="card-body text-center">
+        <img
+          src="http://nebula.wsimg.com/06db920f4a650dba5ef4afe79399e383?AccessKeyId=F49016138E0921C7102B&disposition=0&alloworigin=1"
+          class="card-img-top"
+          alt="..."
+        />
+        <h5 class="card-title">
+          Camp Life
+        </h5>
+        <p class="card-text">
+          Choose the style of frame and mat to personalize for your home
+          Available Size: 8x10, 11x16, 16x20
+        </p>
+      </div>
+      <div class="card-footer">
+        <button
+          type="button"
+          class="btn btn-primary btn-block"
+          onclick="openProductModal(event)"
+        >
+          Purchase Image
+        </button>
+      </div>
+    </div>
+    <!-- /Card -->
+  </div>
+    <!-- /Products -->
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <p>Made with love for stripe foundations course</p>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="purchaseProductModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="purchaseProductModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="purchaseProductLabel">
+              Purchase Image
+            </h5>
+          </div>
+          <!-- Form  -->
+          <form
+            action="/pay"
+            method="post"
+            id="payment-form"
+            class="form"
+            onsubmit="purchaseProduct(event)"
+          >
+            <div class="modal-body">
+              <!-- Product Details Jumbo Tron -->
+              <div class="jumbotron jumbotron-fluid">
+                <div class="container" id="modalText">
+                  <h1 class="display-4" id="productItemTitle">
+                  </h1>
+                  <p class="lead" id="productItemDescription">
+                  </p>
+                  <p class="lead">$43</p>
+                </div>
+              </div>
+              <!-- /Product Details Jumbo Tron -->
+              <div class="form-group">
+              </div>
+              <div id="checkout">
+      <div id="payment-request">
+        <div id="payment-request-button"></div>
+      </div>
+      <form id="payment-form" method="POST" action="/orders">
+        <p class="instruction">Complete your shipping and payment details below</p>
+        <section>
+          <h2>Shipping &amp; Billing Information</h2>
+          <fieldset class="with-state">
+            <label>
+Name
+              <input name="name" class="field" placeholder="Jenny Rosen" required>
+            </label>
+            <label>
+Email
+              <input name="email" type="email" class="field" placeholder="jenny@example.com" required>
+            </label>
+            <label>
+Address
+              <input name="address" class="field" placeholder="185 Berry Street Suite 550">
+            </label>
+            <label>
+City
+              <input name="city" class="field" placeholder="San Francisco">
+            </label>
+            <label class="state">
+State
+              <input name="state" class="field" placeholder="CA">
+            </label>
+            <label class="zip">
+ZIP
+              <input name="postal_code" class="field" placeholder="94107">
+            </label>
+            <label class="select">
+Country
+              <div id="country" class="field US">
+                <select name="country">
+                  <option value="AU">Australia</option>
+                  <option value="AT">Austria</option>
+                  <option value="BE">Belgium</option>
+                  <option value="BR">Brazil</option>
+                  <option value="CA">Canada</option>
+                  <option value="CN">China</option>
+                  <option value="DK">Denmark</option>
+                  <option value="FI">Finland</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                  <option value="HK">Hong Kong</option>
+                  <option value="IE">Ireland</option>
+                  <option value="IT">Italy</option>
+                  <option value="JP">Japan</option>
+                  <option value="LU">Luxembourg</option>
+                  <option value="MX">Mexico</option>
+                  <option value="NL">Netherlands</option>
+                  <option value="NZ">New Zealand</option>
+                  <option value="NO">Norway</option>
+                  <option value="PT">Portugal</option>
+                  <option value="SG">Singapore</option>
+                  <option value="ES">Spain</option>
+                  <option value="SE">Sweden</option>
+                  <option value="CH">Switzerland</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="US" selected="selected">United States</option>
+                </select>
+              </div>
+            </label>
+          </fieldset>
+            <div class="modal-footer">
+                <button
+                style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                id="theButton"
+                role="link"
+              >
+                Purchase This Image
+              </button>
+            </div>
+          </form>
+          <!-- /Form -->
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
+
+    <script src="https://js.stripe.com/v3"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
